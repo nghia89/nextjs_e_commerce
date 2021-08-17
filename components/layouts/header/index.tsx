@@ -11,34 +11,10 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="top-bar-right">
-                    <div className="header-language">
-                        <div className="cleric-language cleric-dropdown">
-                            <a href="#" className="active language-toggle" data-cleric="cleric-dropdown">
-                                <span>
-                                    English (USD)
-                                </span>
-                            </a>
-                            <ul className="cleric-submenu">
-                                <li className="switcher-option">
-                                    <a href="#">
-                                        <span>
-                                            French (EUR)
-                                        </span>
-                                    </a>
-                                </li>
-                                <li className="switcher-option">
-                                    <a href="#">
-                                        <span>
-                                            Japanese (JPY)
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                     <ul className="header-user-links">
                         <li>
-                            <a href="login.html">Login or Register</a>
+                            <a href="login.html">Login</a>/
+                            <a href="login.html">Register</a>
                         </li>
                     </ul>
                 </div>

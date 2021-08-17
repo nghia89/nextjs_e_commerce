@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import React from 'react'
+import { MainSlideShow } from '../components/layouts/main/slideShow'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -12,71 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="main-content">
         <div className="fullwidth-template">
-          <div className="home-slider style1 rows-space-30">
-            <div className="container">
-              <div className="slider-owl owl-slick equal-container nav-center" data-slick="{&quot;autoplay&quot;:true, &quot;autoplaySpeed&quot;:9000, &quot;arrows&quot;:true, &quot;dots&quot;:false, &quot;infinite&quot;:true, &quot;speed&quot;:1000, &quot;rows&quot;:1}" data-responsive="[{&quot;breakpoint&quot;:&quot;2000&quot;,&quot;settings&quot;:{&quot;slidesToShow&quot;:1}}]">
-                <div className="slider-item style1">
-                  <div className="slider-inner equal-element">
-                    <div className="slider-infor">
-                      <h5 className="title-small">
-                        New Arrivals!
-                      </h5>
-                      <h3 className="title-big">
-                        Scandinavians<br />
-                        Collection
-                      </h3>
-                      <div className="price">
-                        Price from:
-                        <span className="number-price">
-                          $75.00
-                        </span>
-                      </div>
-                      <a href="#" className="button btn-shop-the-look bgroud-style">Shop now</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="slider-item style2">
-                  <div className="slider-inner equal-element">
-                    <div className="slider-infor">
-                      <h5 className="title-small">
-                        Table Supplies Sale!
-                      </h5>
-                      <h3 className="title-big">
-                        Up to <span>75%</span> <br /> Store Items
-                      </h3>
-                      <div className="price">
-                        Price from:
-                        <span className="number-price">
-                          $95.00
-                        </span>
-                      </div>
-                      <a href="#" className="button btn-shop-now">Shop now</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="slider-item style3">
-                  <div className="slider-inner equal-element">
-                    <div className="slider-infor">
-                      <h5 className="title-small">
-                        New Arrivals!
-                      </h5>
-                      <h3 className="title-big">
-                        Trending <br />
-                        Collection
-                      </h3>
-                      <div className="price">
-                        Price from:
-                        <span className="number-price">
-                          $75.00
-                        </span>
-                      </div>
-                      <a href="#" className="button btn-shop-the-look bgroud-style">Shop now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {<MainSlideShow />}
           <div className="banner-wrapp rows-space-35">
             <div className="container">
               <div className="row">

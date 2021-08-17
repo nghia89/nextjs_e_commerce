@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
       <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
-      {/* <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" /> */}
+      <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
       {/* <link rel="stylesheet" href="/assets/css/animate.min.css" /> */}
       {/* <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
       <link rel="stylesheet" href="/assets/css/slick.css" />

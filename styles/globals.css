@@ -14,3 +14,60 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+/* Slideshow */
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1170px;
+  position: relative;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slideshowDot.active {
+  background-color: #fcfafd;
+}
+.btn-next{
+  position: absolute;
+    display: -moz-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    z-index: 10;
+}

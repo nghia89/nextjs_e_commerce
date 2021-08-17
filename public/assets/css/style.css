@@ -1403,7 +1403,7 @@ table tr:last-child td, table tr:last-child th {
 
 /*header-style-1*/
 .header .main-header {
-	padding: 50px 0;
+	padding: 25px 0;
 }
 .social-header, .header-language {
 	display: inline-block;
@@ -6417,7 +6417,7 @@ ul.list-products {
 =========================================*/
 .top-bar {
 	background: #7f87ab;
-	padding: 10px 0;
+	/* padding: 10px 0; */
 	color: #fff;
 }
 .top-bar-left {
