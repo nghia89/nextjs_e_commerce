@@ -13,6 +13,7 @@ interface IProps {
 export default function Slideshow(props: IProps) {
 
     const [data, setData] = useState(props.data)
+    const [lengthIndex, setLengthIndex] = useState(props.data ? props.data?.length : 0)
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef<any>(null);
 
@@ -38,13 +39,28 @@ export default function Slideshow(props: IProps) {
         };
     }, [index]);
 
+    function handleNext() {
+        let newIndex = index + 1
+        if (newIndex == lengthIndex)
+            setIndex(0)
+        else
+            setIndex(newIndex)
+    }
+    function handlePrev() {
+        let newIndex = (index - 1)
+        if (newIndex < 0) setIndex(lengthIndex - 1)
+        else
+            setIndex(newIndex)
+    }
     const myLoader = ({ src, width }: any) => {
         return `${src}?w=${width}`
     }
 
     return (
         <div className="slideshow">
-            <span className="slick-arrow btn-next">
+            <span
+                onClick={() => handlePrev()}
+                className="btn-slick-arrow btn-slick-arrow-left">
                 {IconChevronLeft()}
             </span>
             <div
@@ -67,7 +83,9 @@ export default function Slideshow(props: IProps) {
                     </Link>
                 ))}
             </div>
-            <span className="slick-arrow btn-next">
+            <span
+                onClick={() => handleNext()}
+                className="btn-slick-arrow btn-slick-arrow-right">
                 {IconChevronRight()}
             </span>
 
