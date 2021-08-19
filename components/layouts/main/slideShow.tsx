@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Slideshow from "../../componentCommon/slideshow";
 import { ISlideShow } from "../../../interfaces/common";
 
-export function MainSlideShow() {
+export default function MainSlideShow() {
 
     return <div className="mt-4">
         <Slideshow

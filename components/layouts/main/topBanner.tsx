@@ -1,4 +1,4 @@
-export function MainTopBanner() {
+export default function MainTopBanner() {
     return <div className="banner-wrapp rows-space-35">
         <div className="container">
             <div className="home_banner_primary_container">

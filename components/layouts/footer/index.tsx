@@ -1,4 +1,5 @@
 import React from "react";
+import { IconFacebook, IconYoutube } from "../../../utils/svg";
 
 export default function Footer() {
 
@@ -7,74 +8,48 @@ export default function Footer() {
             <div className="container">
                 <div className="container-wapper">
                     <div className="row">
-                        <div className="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-sm hidden-md hidden-lg">
-                            <div className="cleric-newsletter style1">
-                                <div className="newsletter-head">
-                                    <h3 className="title">Newsletter</h3>
-                                </div>
-                                <div className="newsletter-form-wrap">
-                                    <div className="list">
-                                        Sign up for our free video course and <br /> urban garden inspiration
-                                    </div>
-                                    <input type="email" className="input-text email email-newsletter" placeholder="Your email letter" />
-                                    <button className="button btn-submit submit-newsletter">SUBSCRIBE</button>
-                                </div>
+                        <div className="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div className="cleric-custommenu default">
+                                <h2 className="widgettitle">HỖ TRỢ KHÁCH HÀNG</h2>
+                                <ul className="menu">
+                                    <li className="menu-item">
+                                        <a href="#">Hướng dẫn chọn cỡ giày</a>
+                                    </li>
+                                    <li className="menu-item">
+                                        <a href="#">Chính sách đổi trả</a>
+                                    </li>
+                                    <li className="menu-item">
+                                        <a href="#">Thanh toán giao nhận</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
                             <div className="cleric-custommenu default">
-                                <h2 className="widgettitle">Quick Menu</h2>
+                                <h2 className="widgettitle">Thông tin</h2>
                                 <ul className="menu">
                                     <li className="menu-item">
-                                        <a href="#">New arrivals</a>
+                                        <a href="#">Giới thiệu</a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="#">Life style</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#">Accents</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#">Tables</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#">Dining</a>
+                                        <a href="#">Liên hệ</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs">
-                            <div className="cleric-newsletter style1">
-                                <div className="newsletter-head">
-                                    <h3 className="title">Newsletter</h3>
-                                </div>
-                                <div className="newsletter-form-wrap">
-                                    <div className="list">
-                                        Sign up for our free video course and <br /> urban garden inspiration
-                                    </div>
-                                    <input type="email" className="input-text email email-newsletter" placeholder="Your email letter" />
-                                    <button className="button btn-submit submit-newsletter">SUBSCRIBE</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <div className="cleric-custommenu default">
-                                <h2 className="widgettitle">Information</h2>
-                                <ul className="menu">
-                                    <li className="menu-item">
-                                        <a href="#">FAQs</a>
+                            <div className="cleric-socials">
+                                <h2 className="widgettitle">Kết nối với chúng tôi</h2>
+                                <ul className="socials">
+                                    <li>
+                                        <a href="#" className="social-item" target="_blank">
+                                            {IconFacebook()}
+                                        </a>
                                     </li>
-                                    <li className="menu-item">
-                                        <a href="#">Track Order</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#">Delivery</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#">Contact Us</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="#">Return</a>
+                                    <li>
+                                        <a href="#" className="social-item" target="_blank">
+                                            {IconYoutube()}
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -83,27 +58,9 @@ export default function Footer() {
                     <div className="footer-end">
                         <div className="row">
                             <div className="col-sm-12 col-xs-12">
-                                <div className="cleric-socials">
-                                    <ul className="socials">
-                                        <li>
-                                            <a href="#" className="social-item" target="_blank">
-                                                <i className="icon fa fa-facebook" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" className="social-item" target="_blank">
-                                                <i className="icon fa fa-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" className="social-item" target="_blank">
-                                                <i className="icon fa fa-instagram" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+
                                 <div className="coppyright">
-                                    Copyright © 2020
+                                    Copyright © 2021
                                     <a href="#">Cleric</a>
                                     . All rights reserved
                                 </div>
