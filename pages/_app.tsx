@@ -1,14 +1,15 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/layouts'
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
     <Head>
       <meta charSet="UTF-8" />
-      <meta http-equiv="X-UA-compatible" content="IE=edge" />
+      <meta httpEquiv="X-UA-compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* <link rel="shortcut icon" type="image/x-icon" href='//assets/images/favicon.png' /> */}
       <link rel="icon" href="/favicon.ico" />
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <link rel="stylesheet" href="/assets/css/mobile-menu.css" />
       <link rel="stylesheet" href="/assets/fonts/flaticon/flaticon.css" />
       <link rel="stylesheet" href="/assets/css/style.css" />
+
       {/* 
       <script src="/assets/js/bootstrap.min.js"></script>
       <script src="/assets/js/owl.carousel.min.js"></script>

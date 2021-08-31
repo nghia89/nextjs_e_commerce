@@ -102,3 +102,54 @@ left: 10px;
   margin-top: 16px;
   margin-bottom: 15px;
 }
+
+.owl-theme .item-slide{
+  width: 1200px;
+}
+
+.owl-carousel .slick-dots {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav button {
+  background: rgba(255,255,255,.9) !important;
+    height: 60px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+
+.owl-carousel .owl-nav .owl-prev {
+  box-shadow: -6px 0 4px rgb(0 0 0 / 5%), -4px 0 4px rgb(0 0 0 / 9%);
+  border-radius: 4px 0 0 4px;
+  left: 0;
+}
+
+
+.owl-carousel .owl-nav .owl-next {
+  box-shadow: 6px 0 4px rgb(0 0 0 / 5%), 4px 0 4px rgb(0 0 0 / 9%);
+    border-radius: 0 4px 4px 0;
+    right:  0;
+}
+
+.owl-carousel .owl-stage-outer .owl-stage .owl-item .product-item{
+  width: auto;
+}
+
+.owl-carousel .owl-nav-product-next-prev .owl-prev{
+  left: 15px !important;
+}
+
+.owl-carousel .owl-nav-product-next-prev .owl-next{
+  right: 15px !important;
+}

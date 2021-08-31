@@ -1,6 +1,7 @@
 import React from "react";
 import { IconFacebook, IconYoutube } from "../../../utils/svg";
-
+import Image from "next/image";
+import zalo from './../../../public/assets/images/zalo.jpg'
 export default function Footer() {
 
     return <>
@@ -46,6 +47,7 @@ export default function Footer() {
                                             {IconFacebook()}
                                         </a>
                                     </li>
+
                                     <li>
                                         <a href="#" className="social-item" target="_blank">
                                             {IconYoutube()}

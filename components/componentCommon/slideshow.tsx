@@ -23,6 +23,7 @@ export default function Slideshow(props: IProps) {
         }
     }
 
+
     useEffect(() => {
         resetTimeout();
         if (timeoutRef)
