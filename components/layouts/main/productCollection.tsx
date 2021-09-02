@@ -158,6 +158,7 @@ export default function MainProductCollection() {
                                 lazyLoad
                                 items={4}
                                 nav
+                                loop
                                 navContainerClass={'owl-nav owl-nav-product-next-prev'}
                                 dots={false}
                             >

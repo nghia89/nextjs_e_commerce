@@ -4,8 +4,13 @@ import React from 'react'
 import MainProductCollection from '../components/layouts/main/productCollection'
 import MainSlideShow from '../components/layouts/main/slideShow'
 import MainTopBanner from '../components/layouts/main/topBanner'
+import { InferGetStaticPropsType } from 'next'
+import { apiProductCategory } from './api'
+import axios from 'axios'
 
-const Home: NextPage = () => {
+interface IProps { }
+function Home(props: IProps) {
+  console.log('props', props)
   return (
     <>
       <Head>
@@ -22,5 +27,21 @@ const Home: NextPage = () => {
     </>
   )
 }
+const https = require("https");
+const agent = new https.Agent({
+  rejectUnauthorized: false
+})
+
+export async function getStaticProps() {
+  const menus = await apiProductCategory.getCategory();
+  return {
+    props: {
+      menus,
+    },
+    revalidate: 10, // In seconds
+  }
+}
 
 export default Home
+
+

@@ -87,7 +87,7 @@ left: 10px;
   opacity: 1 !important;
 }
 .home-banner-primary-item{
-  width: 275px;
+  //width: 275px;
   height: 150px;
   background-color: rgb(232, 232, 232);
   border-radius: 20px;
@@ -152,4 +152,11 @@ left: 10px;
 
 .owl-carousel .owl-nav-product-next-prev .owl-next{
   right: 15px !important;
+}
+
+#home-slide .owl-nav button{
+  opacity: 0.3;
+}
+#home-slide:hover .owl-prev,#home-slide:hover .owl-next{
+    opacity: 1;
 }

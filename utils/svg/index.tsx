@@ -16,7 +16,7 @@ export const IconFacebook = () => {
         <title>D25F8BCD-E811-476A-A2AB-5F6392AD7AAF</title>
         <desc>Created with sketchtool.</desc>
         <defs></defs>
-        <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
+        <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g id="ic_fb">
                 <g>
                     <rect id="bound" x="0" y="0" width="32" height="32"></rect>
@@ -32,7 +32,7 @@ export const IconYoutube = () => {
         <title>16496824-C9CC-4E49-8016-A9AD8EB94332</title>
         <desc>Created with sketchtool.</desc>
         <defs></defs>
-        <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
+        <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g id="ic_youtube">
                 <g>
                     <g id="Group" transform="translate(3.000000, 6.000000)">
