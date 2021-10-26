@@ -7,7 +7,6 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           {/* <link rel="shortcut icon" type="image/x-icon" href='//assets/images/favicon.png' /> */}
           <link rel="icon" href="/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"

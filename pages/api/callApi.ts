@@ -13,6 +13,7 @@ async function callApi(method: Method, path: string, body?: any, baseApi?: strin
 }
 
 async function _callApi(method: Method, path: string, body?: any, baseApi?: string): Promise<any> {
+  // console.log('process.env.BASE_API_URL', process.env.NODE_ENV)
   const config = {
     baseURL: baseApi ? baseApi : process.env.BASE_API_URL
 
